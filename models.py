@@ -37,11 +37,9 @@ class Advertisements(models.Model):
         return self.updated_at.strftime("%d.%m.%Y в %H:%M:%S")
 
 
-#Задание 4.1
 class Meta:
     db_table = 'advertisements'
 
-#Задание 4.2
 def _str_(self) -> str:
     return f"Advertisements(id = {self.id}, title = {self.title}, price = {self.price})"
 
